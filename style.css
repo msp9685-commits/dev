@@ -7,31 +7,45 @@ html,
 body{
     height: 100%;
     width: 100%;
-}
-main{
-    height: 100%;
-    width: 100%;
-    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(32, 32, 32);
+}
+main{
+    height: 70%;
+    width: 70%;
+    background-color: rgb(163, 162, 162);
+    display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 20px;
     gap: 20px;
 }
-#blub{
-    height: 150px;
-    width: 150px;
-    background-color: white;
-    border-radius: 50%;
+#input{
+    border-radius: 5px;
+    height: 24px;
 }
-button{
-    background-color: black;
-    border-radius: 20%;
-    border: 2px,solid,white;
-    height: 20px;
-    width: 40px;
-    color: white;
+#btn{
+    border-radius: 10px;
+    background-color: rgb(246, 194, 51);
+    padding: 2px 5px 2px 5px;
 }
-#blub.lightup{
-    background-color: yellow;
+.li{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 5px;
+}
+.li button{
+    padding: 2px 3px 2px 3px;
+    border-radius: 10px;
+    background-color: wheat;
+}
+.todolist{
+    width: 70%;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    
 }
