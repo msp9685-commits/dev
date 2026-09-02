@@ -5,19 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
 </head>
 <body>
-  <div class="top">
-    <p>Timer-<span id="timer">0</span></p>
-    <p>score-<span id="score">0</span></p>
-  </div>
   <main>
-    
+    <div class="navi">
+      <nav>
+        <h3>Fake-Store</h3>
+        <button id="createbtn">Create Product</button>
+      </nav>
+    </div>
+    <div class="products">
+      
+    </div>
+    <div class="form">
+      <div class="cross">
+        <div></div>
+        <h3 id="close"><i class="ri-close-large-line"></i></h3>
+      </div>
+      <form>
+        <h1>Create Product</h1>
+        <input type="text" placeholder="Product Name">
+        <input type="text" placeholder="Description">
+        <input type="number" placeholder="price">
+        <input type="url" placeholder="image">
+        <button>Create</button>
+      </form>
+    </div>
   </main>
-  <button>Start</button>
-  <div class="overlay">
-    <h3>Game Over</h3>
-  </div>
   <script src="script.js"></script>
 </body>
 </html>

@@ -7,47 +7,102 @@ html,
 body{
   height: 100%;
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  background-color: black;
-  color: white;
+  padding: 5px 5px;
 }
 main{
-  position: relative;
-  height: 70%;
-  width: 50%;
-  border: 2px solid rgb(255, 252, 252);
-  
-}
-.top{
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-}
-.box{
-  position: absolute;
-  height: 15%;
-  width: 15%;
-  background-color: red;
-}
-button{
-  border-radius: 10%;
-  background-color: cornsilk;
-  padding: 3px 10px;
-  color: black;
-  font-size: medium;
-}
-.overlay{
-  justify-content: center;
-  align-items: center;
-  display: none;
-  position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.87);
-  text-transform: uppercase;
-  font-size: 50px;
+}
+.navi{
+  height: 10%;
+  width: 100%;
+  background-color: rgb(61, 159, 185);
+  padding: 10px 10px;
+  margin-bottom: 15px;
+}
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+#createbtn{
+  background-color: rgb(248, 142, 94);
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: medium;
+  cursor: pointer;
+}
+.products{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.product_card{
+  height: 45%;
+  width: 24%;
+  border: 2px solid rgb(88, 88, 88);
+  box-shadow: 3px 0px 10px rgb(106, 106, 106);
+  background-color: whitesmoke;
+}
+.img{
+  height: 60%;
+  width: 100%;
+  padding: 2px;
+}
+.img img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+.text{
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.btns{
+  
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3px;
+}
+.btns button{
+  border-radius: 10%;
+  background-color: rgb(220, 128, 66);
+  padding: 3px 5px;
+  cursor: pointer;
+  outline: none;
+  border: 0cap;
+}
+.form{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(247, 246, 246, 0.623);
+  align-items: center;
+  justify-content: center;
+ display: none;
+}
+.cross{
+  position: absolute;
+  top: 38%;
+  right: 36%;
+  display: flex;
+  justify-content: space-between;
+}
+form{
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+form button{
+  border-radius: 10px;
+  background-color: bisque;
 }
